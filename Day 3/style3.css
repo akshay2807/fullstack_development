@@ -1,0 +1,97 @@
+/* * {
+    background-color: rgb(147, 196, 196);
+} */
+
+button {
+    font-size: 30px;
+    background-color: beige;
+}
+
+h1,
+h2 {
+    font-size: 30px;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+#signu {
+    color: rgb(13, 119, 240);
+    background-color: rgb(9, 231, 138);
+}
+
+.tag {
+    color: rgb(7, 4, 1);
+    background-color: rgb(237, 15, 7);
+}
+
+.post a {
+    color: rgb(253, 142, 5);
+    text-decoration: none;
+}
+
+footer a {
+    color: brown
+}
+
+input+button {
+    background-color: pink
+}
+
+h2+button {
+    font-size: 20px;
+    background-color: magenta;
+}
+
+/* footer has many child 'a'but has only one direct child since 'a'is a direct descendant of the footer this can be changed  */
+footer>a {
+    color: blue;
+}
+
+input[type="password"] {
+    color: rgb(247, 6, 6);
+}
+
+a[href*="google"] {
+    color: magenta;
+}
+
+.post button:hover {
+    background-color: brown;
+    color: aliceblue;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: rgb(56, 56, 8);
+}
+
+.post:nth-of-type(2n) {
+    background-color: grey;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: rgb(250, 11, 11);
+}
+
+p::selection {
+    background-color: yellowgreen;
+}
+
+.post button:hover {
+    background-color: rgb(124, 124, 236);
+    font-size: 30px
+}
+
+button:hover {
+    background-color: olive;
+}

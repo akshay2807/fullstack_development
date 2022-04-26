@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms_Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <!-- here it goes to to tcos.com bcoz it is ddefines inside a form -->
+    <button>Outside the form</button>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username: </label>
+            <input id="username" type="text" placeholder="Enter username" name="Akshay">
+        </p>
+        <p>
+            <label for="password">Enter your password: </label>
+            <input type="password" placeholder="Enter your password" name="password">
+        </p>
+        <p>
+            <label for="color">Select your color: </label>
+            <input type="color" id="color" name="color">
+        </p>
+        <!-- here it works as a regular type button -->
+        <button type="button">In the middle</button>
+        <p>
+            <label for="month">Select your month: </label>
+            <input type="month" id="month" placeholder="Enter the month">
+        </p>
+        <p>
+            <label for="time">Enter the time: </label>
+            <input type="time" id="time" placeholder="Enter the time">
+        </p>
+        <p>
+            <label for="date">Enter the date: </label>
+            <input type="date" id="date" placeholder="Enter the date">
+        </p>
+        <p>
+            <label for="number">Enter the number: </label>
+            <input type="number" id="number" min="5" max="500" step="5" placeholder="Enter the number" name="num">
+        </p>
+        <!-- here any no. of buttons are placed inside a form by default is takes submit action 
+        when the type is not mentioned and action is executed -->
+        <button>Submit</button>
+        <input type="submit" value="Click me !!">
+    </form>
+    <br>
+    <h2>Hijacking searches</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <br>
+    <!-- https://www.youtube.com/watch?v=8bpZg8V3Onk -->
+    <form action="https://www.youtube.com/watch">
+        <input type="text" name="v">
+        <button>Search in Youtube</button>
+    </form>
+
+    <h2>Extra Inputs</h2>
+    <form action="/dogs">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="oops">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="nice">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="hmmm">
+        </p>
+        <label for="Meal">Please select a dish</label>
+        <select name="Meal" id="Meal">
+            <option value="Select">Please Select an Option</option>
+            <option value="Veg_section">Veg_section</option>
+            <option value="meat">Meat</option>
+            <option value="chicken" selected>Chicken</option>
+            <option value="Desserts">Desserts</option>
+        </select>
+        <br>
+        <p>
+            <label for="Mayonesse">Amount of Mayonesse</label>
+            <input type="range" id="Mayaonesse" step="10" min="1" max="200" name="Mayonesse_level" value="110">
+        </p>
+        <p>
+            <label for="Request">Any special requests ??</label>
+            <textarea name="request" id="Request" cols="30" rows="10" placeholder="Type ur text here"></textarea>
+        </p>
+        <button>Submit</button>
+        <h2>Validations Demo</h2>
+        <form action="/dummy/">
+            <label for="first">Enter your name</label>
+            <input type="text" name="first" id="first" required>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="10">
+            </p>
+            <p>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <button>Submit</button>
+        </form>
+    </form>
+</body>
+
+</html>

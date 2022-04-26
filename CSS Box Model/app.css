@@ -1,0 +1,46 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    background-color: blueviolet;
+    width: 200px;
+    padding-left: 100px;
+    margin: 0px 0px 10px 0px;
+}
+
+span {
+    margin-left: 50px;
+}
+
+#one {
+    background-color: rgb(243, 179, 168);
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0px 0px 10px 0px;
+}
+
+#two {
+    background-color: rgb(227, 108, 87);
+    border-color: rgb(141, 8, 243);
+    border-width: 7px;
+    border-style: dotted;
+    border-left-color: brown;
+    padding-right: 50px;
+    margin: 0px 0px 10px 0px;
+}
+
+#three {
+    background-color: tomato;
+    border: 6px dashed violet;
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+}
+
+button {
+    padding: 15px 0px 10px 20px
+}

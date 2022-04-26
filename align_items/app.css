@@ -1,0 +1,39 @@
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    text-align: center
+}
+
+#container {
+    background-color: rgb(9, 48, 48);
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    /* align-content: space-between;
+    align-content: space-around;
+    align-content: flex-end;
+    align-content: flex-start */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+/* div:nth-of-type(3) {
+    align-self: center;
+}
+
+div:nth-of-type(5) {
+    align-self: flex-end;
+} */
